@@ -1,0 +1,325 @@
+body {
+    font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/img/bg.jpg') top center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(40%); 
+}
+
+/* Header Styles */
+header {
+    background-color: transparent;
+    padding: 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    padding-right: 200px;
+}
+
+.logo-container img {
+    width: 150px;
+}
+
+.header-right {
+    display: flex;
+    gap: 40px; 
+}
+
+.language-selector,
+.login-link {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.language-selector {
+    color: #fff; 
+    background-color: black;
+    border: 2px solid #fff; 
+}
+
+.login-link {
+    color: #fff; 
+    background-color: #e50914;
+}
+
+.language-selector {
+    border: 2px white solid;
+    appearance: none;
+    padding-right: 30px; 
+    background-size: 20px; 
+    background-position: center right 15px;
+}
+
+/* Main Section Styles */
+.main-section {
+    text-align: center;
+    padding: 80px;
+}
+
+h1 {
+    font-size: 3.5em; 
+    margin-bottom: 30px;
+}
+
+.subscription-form {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Input Styles */
+input {
+    padding: 20px;
+    width: 250px;
+    margin-right: 10px; 
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1); /* Background color with transparency */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border color with transparency */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+input::placeholder {
+    color: #b9b7b7;
+}
+
+
+
+/* Start Button Styles */
+.start-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #b20710;
+}
+
+/* Offer Case Styles */
+.offer-case {
+    background: linear-gradient(to right, #204d74, #6b3980, #8b2f26);
+    padding: 20px; 
+    border-radius: 20px; 
+    margin-top: 30px;
+    position: relative;
+}
+
+.offer-image {
+    position: absolute;
+    left: 25vw;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.offer-case h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.offer-description {
+    font-size: 1.6em; 
+    margin-bottom: 15px;
+}
+
+.learn-more-link {
+    display: block;
+    margin-top: 10px;
+    color: #000000;
+}
+
+/* Additional Content Section Styles */
+.additional-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.text-content2,
+.text-content3 {
+    text-align: left;
+    max-width: 50%;
+}
+
+.text-content2 h1,
+.text-content3 h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+}
+
+.text-content2 p,
+.text-content3 p {
+    font-size: 1.2em;
+    color: #b9b7b7;
+}
+
+.image-container {
+    flex-shrink: 0;
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Horizontal Rule Styles */
+hr {
+    height: 10px; 
+    background-color: #232323;
+    border: none; 
+    margin: 80px 0;
+}
+
+/* FAQ Section */
+
+.faq-section {
+    text-align: center;
+}
+
+.faq-section h2 {
+    color: #fff;
+    margin-bottom: 20px; 
+}
+
+.accordion {
+    width: 100%;
+    max-width: 1000px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 20px auto; 
+
+}
+
+.accordion-item {
+    background-color: #414141;
+    border-radius: 10px; 
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.accordion-item:hover .accordion-button {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    background: #414141;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.plus-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    background-color: #414141;
+    max-height: 0;
+    padding: 0 20px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+
+}
+
+.accordion-content p {
+    margin: 20px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.accordion-button.active {
+    background-color: #555;
+}
+
+.accordion-button.active .plus-icon {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.accordion-button.active + .accordion-content {
+    max-height: 100vh;
+    padding: 20px;
+}
+
+.accordion-button.active + .accordion-content p {
+    opacity: 1;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.column {
+    margin: 0 100px;
+}
+
+.footer-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: #fff;
+}
